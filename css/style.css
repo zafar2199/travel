@@ -643,5 +643,8 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .section02 .section02-right {
+    padding: 0 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
