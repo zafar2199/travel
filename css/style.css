@@ -1,24 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 .section03 .section03-left h1 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
+  font-weight: 700;
   margin-top: 100px;
 }
 
 .section03 .section03-left .content-p p {
   color: #7D7987;
   font-size: 17px;
+  font-weight: 500;
   font-family: 'Mulish', sans-serif;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .section04 h1 {
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 38px;
+  font-weight: 700;
+  font-size: 36px;
 }
 
 * {
@@ -47,7 +49,6 @@ img {
 }
 
 .navbarr {
-  position: fixed;
   z-index: 5;
   width: 100%;
   padding: 25px 0;
@@ -68,7 +69,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 0px;
 }
 
 .menu-list {
@@ -83,7 +84,7 @@ img {
 
 .menu-list li {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   margin-right: 35px;
 }
 
@@ -97,14 +98,19 @@ img {
   color: #202336;
 }
 
+#active {
+  color: #202336;
+}
+
 .btn-nav {
   width: 120px;
   height: 40px;
-  border-radius: 8%;
-  border: 1px solid #FB8F1D;
+  border-radius: 10px;
+  border: 2px solid #FB8F1D;
   background-color: #FB8F1D;
   color: #fff;
   font-size: 16px;
+  font-weight: 500;
   margin-right: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +142,7 @@ img {
 }
 
 .header {
-  padding-top: 90px;
+  padding-top: 10px;
   background: url(../images/ppp.png) no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -144,19 +150,20 @@ img {
 
 .header .top-left h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 64px;
+  font-weight: 700;
+  font-size: 50px;
 }
 
 .header .top-left h2 {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 600;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .header .top-left .spa {
   position: absolute;
   width: 32px;
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 .header .top-left .spa span {
@@ -165,36 +172,44 @@ img {
   background-color: #000;
 }
 
-.dropdown .btn-drop {
+.header .top-right {
+  position: relative;
+}
+
+.header .top-right img {
+  max-width: 500px;
+  position: absolute;
+  right: 0;
+}
+
+.select {
+  width: 230px;
+  padding: 15px 25px;
+  color: #4A4C53;
   background-color: #fff;
-  color: #000;
-  font-size: 15px;
-  padding: 20px 30px;
-  border: 1px solid #999;
+  border: 1px solid #4A4C53;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
   border-radius: 5px;
-  -webkit-transition: all .5 ease;
-  transition: all .5 ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../images/Vector.png);
+  background-position: right 25px top 50%;
+  background-repeat: no-repeat;
+  padding-right: 110px;
 }
 
-.dropdown .btn-drop:hover {
-  background-color: #FB8F1D;
-  color: #fff;
+.select option {
+  background: #fff;
+  color: #4A4C53;
 }
 
-.dropdown .dropdown-menu {
-  background-color: #FB8F1D;
-}
-
-.btn-explore {
-  background-color: #FB8F1D;
-  color: #fff;
-  -webkit-transition: all .5 ease;
-  transition: all .5 ease;
-}
-
-.btn-explore:hover {
-  background-color: #fff;
-  color: #FB8F1D;
+.select:focus,
+.select:hover {
+  outline: none;
+  border: 1px solid #000;
 }
 
 .section02 {
@@ -204,17 +219,24 @@ img {
   background-position: top;
 }
 
-.section02 h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  margin-top: 100px;
+.section02 .section02-right {
+  padding-left: 120px;
 }
 
-.section02 .content-p p {
+.section02 .section02-right h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.section02 .section02-right .content-p p {
   color: #7D7987;
   font-size: 17px;
   font-family: 'Mulish', sans-serif;
-  margin-top: 30px;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .card-title {
@@ -232,12 +254,13 @@ img {
 
 .card-title h1 {
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 38px;
+  font-weight: 700;
+  font-size: 36px;
 }
 
 .card-title span {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 600;
   color: #FB8F1D;
 }
 
@@ -263,6 +286,7 @@ img {
   overflow: hidden;
   padding: 0;
   margin-top: 60px;
+  border: 1px solid #fff;
   border-radius: 10px;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -282,7 +306,9 @@ img {
   position: absolute;
   width: 120px;
   height: 60px;
+  left: 0;
   bottom: -160px;
+  padding: 0 10px;
   background-color: #fff;
   border-radius: 0px 10px 0px 0px;
   display: -webkit-box;
@@ -311,6 +337,7 @@ img {
 
 .card .card-content span {
   font-size: 15px;
+  font-weight: 500;
   color: #80918E;
 }
 
@@ -342,6 +369,7 @@ img {
 }
 
 .swiper-container01 {
+  border-radius: 0;
   width: 100%;
   height: 400px;
 }
@@ -371,16 +399,21 @@ img {
           flex-direction: column;
 }
 
+.swiper-slide01 img {
+  margin-top: 20px;
+}
+
 .swiper-slide01 p {
   font-family: 'Mulish', sans-serif;
   font-size: 24px;
-  margin-top: 40px;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .swiper-slide01 h2 {
   font-size: 22px;
-  font-weight: bold;
-  margin-top: 60px;
+  font-weight: 600;
+  margin-top: 40px;
 }
 
 .swiper-slide01 h3 {
@@ -467,12 +500,12 @@ img {
 
 .section05 h2 {
   font-size: 19px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .section05 p {
   font-size: 15px;
-  font-size: 15px;
+  font-weight: 500;
   color: #7D7987;
 }
 
@@ -498,7 +531,8 @@ img {
 
 .footer .footer-content span {
   font-family: 'Mulish', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
+  font-weight: 500;
   color: #848484;
 }
 
@@ -513,14 +547,15 @@ img {
 }
 
 .footer .footer-right h1 {
-  font-size: 19px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: 700;
   font-family: 'Mulish', sans-serif;
 }
 
 .footer .footer-right a span {
   font-family: 'Mulish', sans-serif;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 15px;
   color: #848484;
   padding-top: 5px;
 }
@@ -546,6 +581,16 @@ img {
 
 .messenger a i:hover {
   color: #555;
+}
+
+.messenger a:nth-child(1) {
+  padding-left: 0;
+}
+
+@media (max-width: 1140px) {
+  .select {
+    width: 200px;
+  }
 }
 
 @media (max-width: 868px) {
@@ -586,6 +631,9 @@ img {
   }
   .active {
     left: 0%;
+  }
+  .select {
+    width: 220px;
   }
   .dropdown-res {
     display: -webkit-box;
